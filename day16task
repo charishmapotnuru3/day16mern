@@ -1,0 +1,64 @@
+*what is lambda function? when we use it? why we call it as anonymous function?
+-->A lambda function is a small anonymous function.A lambda function can take any number of arguments, but can only have one expression.
+-->We use lambda functions once we require a nameless function for a brief period of your time. 
+-->It called anonymous function because,no key,names are required. The lambda keyword is used to define a undefined function in Python.
+
+*what are the methods used in files?
+-->  1. Opening Files: Establish connection with open() or fopen().
+     2. Reading/Writing: Use read()/write() or fread()/fwrite().
+     3. Closing Files: Release resources with close() or fclose().
+     4. Appending Data: Add with append() or fwrite() positioning.
+
+*what are modes in files?  
+-->  Read Mode ('r'): Opens the file for reading only. It's the default mode if no mode is specified. If the file doesn't exist, it shows a FileError.
+     Write Mode ('w'): Opens the file for writing only. If the file exists, it truncates (clears) the file. If the file doesn't exist, it creates a new file.
+     Append Mode ('a'): Opens the file for writing at the end of the file (appending). If the file doesn't exist, it creates a new file.
+     Read and Write Mode ('r+'): Opens the file for both reading and writing. The file must exist.
+     Write and Read Mode ('w+'): Opens the file for both reading and writing. It truncates the file if it exists or creates a new file if it doesn't.
+     Append and Read Mode ('a+'): Opens the file for both reading and appending. It creates a new file if it doesn't exist.
+
+*what is higher order function?
+-->Higher-order functions are functions that take a function as a parameter or return a function as an output. 
+  Examples: 1-map()
+            2-filters()
+  mostly used methods()
+
+*what is map method?why we use it? what parameters are considered in map method?
+--> In Python, the map() function is a built-in function that applies a specified function to each item in an iterable (like a list) and returns a map object, which is an iterator. 
+    syntax:
+            map(function, iterable)
+    where,         
+            function: The function to be applied to each item in the iterable.
+            iterable: The collection of items (e.g., list, tuple) on which the function is applied.
+    useage:
+           Map() is often used when you want to perform a specific operation on all elements of an iterable without writing a loop. 
+           It's an efficient way to apply a function to each item in a collection.
+  Example: 
+             def condition(x):
+               return x>2
+             list = [1, 2, 3, 4, 5]
+             list1=list(map(lambda x:x>2,list))
+             print(list1)
+          o/p:[false false true true true]
+                 
+The map() function in Python takes two parameters:-Function
+                                                  -Iterable
+
+                 
+*what is filter method?why we use it? what parameters are considered in filter method?
+-->The filter() method in Python is a built-in function used to construct an iterator from elements of an iterable for which a specified function returns true.  It's used to selectively filter elements from a collection based on a given condition. 
+   The parameters considered in filter() include:
+   Function: The function that returns exact value based on the filtering condition. This function is applied to each item in the iterable.
+   Iterable: The collection of items (e.g., list, tuple) from which elements are filtered based on the function's condition.
+                 Example: def condition(x):
+                            return x>2
+                          list = [1, 2, 3, 4, 5]
+                          list1=list(filter(lambda x:x>2,list))
+                          print(list1)
+                 o/p:[3,4,5]
+
+
+
+
+  
+
